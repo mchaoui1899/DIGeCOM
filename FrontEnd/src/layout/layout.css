@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FULL APP WRAPPER */
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease;
+}
+
+/* PAGE CONTENT */
+.page {
+  flex: 1;
+  width: 100%;
+  padding-top: 70px; /* باش مايدخلش تحت navbar */
+}
+
+/* LIGHT MODE */
+.app-layout.light {
+  background: #53f6f1;
+  color: #000;
+}
+
+/* DARK MODE  */
+.app-layout.dark {
+  background: #222;
+  color: #fff;
+}
+
+/* BODY RESET (important) */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
+}
+body.light {
+  background: #53f6f1;
+  color: #000;
+}
+
+body.dark {
+  background: #222;
+  color: #fff;
+}

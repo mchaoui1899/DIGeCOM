@@ -1,0 +1,223 @@
+/* GLOBAL */
+body {
+  background: #f5f7fb;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* CONTAINER */
+.checkout-container {
+  padding: 40px 15px;
+}
+
+/* TITLE */
+.checkout-container h2 {
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #222;
+  animation: fadeDown 0.6s ease;
+}
+
+/* CARDS */
+.card {
+  border: none;
+  border-radius: 18px;
+  transition: all 0.3s ease;
+  animation: fadeUp 0.6s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+/* PRODUCT ROW */
+.border-bottom {
+  transition: 0.3s;
+}
+
+.border-bottom:hover {
+  background: #fafafa;
+  transform: scale(1.01);
+  border-radius: 10px;
+}
+
+/* IMAGE */
+img {
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+/* INPUTS */
+input {
+  border-radius: 12px !important;
+  padding: 12px !important;
+  border: 1px solid #ddd !important;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #ffb703 !important;
+  box-shadow: 0 0 10px rgba(255,183,3,0.3) !important;
+  transform: scale(1.02);
+}
+
+/* BUTTON */
+.btn-warning {
+  background: linear-gradient(135deg, #ffb703, #fb8500);
+  border: none;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 14px;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.btn-warning:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(251,133,0,0.4);
+}
+
+/* SECOND BUTTON */
+.btn-outline-dark {
+  border-radius: 14px;
+  transition: 0.3s;
+}
+
+.btn-outline-dark:hover {
+  transform: scale(1.03);
+}
+
+/* STICKY SUMMARY */
+.sticky-top {
+  top: 20px;
+  animation: fadeRight 0.6s ease;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 15px;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+/* PAGE */
+.checkout-page {
+  background: #f6f7fb;
+}
+
+/* TITLE */
+.checkout-title {
+  font-size: 28px;
+  letter-spacing: 1px;
+  animation: fadeDown 0.5s ease;
+}
+
+/* CARDS */
+.checkout-card {
+  border: none;
+  border-radius: 16px;
+  transition: 0.3s;
+  animation: fadeUp 0.5s ease;
+}
+
+.checkout-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* LEFT SIDE ITEMS */
+.checkout-item {
+  transition: 0.3s;
+}
+
+.checkout-item:hover {
+  background: #fafafa;
+  border-radius: 10px;
+}
+
+/* IMAGE */
+.checkout-img {
+  transition: 0.3s;
+}
+
+.checkout-img:hover {
+  transform: scale(1.1);
+}
+
+/* INPUTS */
+.checkout-input {
+  border-radius: 12px !important;
+  padding: 10px !important;
+  transition: 0.3s;
+}
+
+.checkout-input:focus {
+  border-color: orange !important;
+  box-shadow: 0 0 10px rgba(255,165,0,0.2) !important;
+  transform: scale(1.02);
+}
+
+/* BUTTON */
+.checkout-btn {
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.checkout-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255,165,0,0.3);
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from {opacity: 0; transform: translateY(15px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeDown {
+  from {opacity: 0; transform: translateY(-15px);}
+  to {opacity: 1; transform: translateY(0);}
+}

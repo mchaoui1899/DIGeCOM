@@ -1,0 +1,32 @@
+.panier-container {
+  background: #f6f6f6;
+}
+
+.product-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.qty-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qty-box button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: #ddd;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.summary-box {
+  position: sticky;
+  top: 20px;
+  border-radius: 12px;
+}

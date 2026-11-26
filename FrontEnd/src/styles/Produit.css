@@ -1,0 +1,173 @@
+/* ===== PAGE ===== */
+
+.produits-page {
+  padding: 40px;
+  background: #f5f7fb;
+  min-height: 100vh;
+}
+
+/* ===== TITLE ===== */
+
+.page-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 35px;
+  color: #111827;
+}
+
+/* ===== GRID ===== */
+
+.produits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 28px;
+}
+
+/* ===== CARD ===== */
+
+.card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: 0.35s ease;
+  position: relative;
+  cursor: pointer;
+  color : white ;
+
+  box-shadow:
+    0 4px 10px rgba(0,0,0,0.04),
+    0 12px 30px rgba(0,0,0,0.06);
+}
+
+/* HOVER */
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+
+  box-shadow:
+    0 12px 24px rgba(0,0,0,0.08),
+    0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* ===== IMAGE ===== */
+
+.card-image {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  background: #f3f4f6;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card-image img {
+  transform: scale(1.08);
+}
+
+/* ===== CONTENT ===== */
+
+.card-content {
+  padding: 18px;
+}
+
+/* TITLE */
+
+.product-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 10px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* PRICE */
+
+.product-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2563eb;
+  margin-bottom: 14px;
+}
+
+/* CATEGORY */
+
+.product-category {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* BRAND */
+
+.product-brand {
+  color: #9ca3af;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+/* ===== BUTTON ===== */
+
+.btn-product {
+  width: 100%;
+  border: none;
+  padding: 13px;
+  border-radius: 12px;
+
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-product:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+
+  transform: translateY(-2px);
+}
+
+/* ===== BADGE ===== */
+
+.badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+
+  background: #ef4444;
+  color: white;
+
+  padding: 6px 10px;
+  border-radius: 10px;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  z-index: 5;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+  .produits-page {
+    padding: 20px;
+  }
+
+  .page-title {
+    font-size: 26px;
+  }
+
+}

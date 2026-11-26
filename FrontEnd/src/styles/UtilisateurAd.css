@@ -1,0 +1,198 @@
+.users-page{
+  padding:40px;
+  background:#0f172a;
+  min-height:100vh;
+  color:white;
+}
+
+.top-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:30px;
+}
+
+.top-header h1{
+  font-size:38px;
+  font-weight:700;
+}
+
+.top-header p{
+  color:#94a3b8;
+}
+
+.add-btn{
+  background:linear-gradient(
+    135deg,
+    #3b82f6,
+    #8b5cf6
+  );
+  border:none;
+  padding:14px 24px;
+  border-radius:14px;
+  color:white;
+  font-weight:600;
+  transition:.3s;
+}
+
+.add-btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 15px 30px rgba(59,130,246,.4);
+}
+
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  margin-bottom:30px;
+}
+
+.stat-card{
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.08);
+  padding:25px;
+  border-radius:22px;
+  backdrop-filter:blur(12px);
+  transition:.3s;
+}
+
+.stat-card:hover{
+  transform:translateY(-5px);
+  background:rgba(255,255,255,.08);
+}
+
+.stat-card span{
+  color:#94a3b8;
+}
+
+.stat-card h2{
+  font-size:34px;
+  margin-top:10px;
+}
+
+.search-box{
+  margin-bottom:25px;
+}
+
+.search-box input{
+  width:100%;
+  padding:18px;
+  border:none;
+  border-radius:16px;
+  background:#1e293b;
+  color:white;
+  font-size:16px;
+}
+
+.table-container{
+  background:rgba(255,255,255,.05);
+  border-radius:24px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.08);
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+thead{
+  background:#111827;
+}
+
+th{
+  padding:20px;
+  text-align:left;
+  color:#cbd5e1;
+}
+
+td{
+  padding:20px;
+  border-top:1px solid rgba(255,255,255,.05);
+}
+
+tr{
+  transition:.3s;
+}
+
+tbody tr:hover{
+  background:rgba(255,255,255,.04);
+}
+
+.user-info{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.avatar{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:linear-gradient(
+    135deg,
+    #3b82f6,
+    #8b5cf6
+  );
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:bold;
+  font-size:20px;
+}
+
+.user-info h4{
+  margin:0;
+}
+
+.user-info p{
+  margin:0;
+  color:#94a3b8;
+}
+
+.role{
+  padding:8px 14px;
+  border-radius:999px;
+  font-size:14px;
+  font-weight:600;
+}
+
+.role.admin{
+  background:#7c3aed33;
+  color:#c084fc;
+}
+
+.role.user{
+  background:#2563eb33;
+  color:#60a5fa;
+}
+
+.actions{
+  display:flex;
+  gap:10px;
+}
+
+.actions button{
+  border:none;
+  padding:10px 14px;
+  border-radius:12px;
+  color:white;
+  font-weight:600;
+  transition:.3s;
+}
+
+.view{
+  background:#2563eb;
+}
+
+.edit{
+  background:#d97706;
+}
+
+.delete{
+  background:#dc2626;
+}
+
+.actions button:hover{
+  transform:scale(1.08);
+}

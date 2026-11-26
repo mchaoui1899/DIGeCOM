@@ -1,0 +1,51 @@
+
+/* HOME HERO *
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+/* PRODUCTS GRID *
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* PRODUCT IMAGE *
+.product-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* CART *
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  background: #111a2e;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* FORM *
+.form {
+  max-width: 500px;
+  margin: auto;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: none;
+}*/
+  .user-page{
+  background: transparent;
+}
